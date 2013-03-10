@@ -269,8 +269,8 @@ h1, h2, h3, h4, h5, h6 {
     list-style: none;
 }
 .archive-list .month{
-    margin-left: 100px;
-    font-size: 2em;
+    margin-left: 120px;
+    font-size: 1.5em;
     color: #222;
 }
 .archive-list .post-set {
@@ -281,10 +281,10 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     float: left;
     text-align: right;
-    width: 80px;
+    width: 100px;
 }
 .archive-list .post-set .post-link {
-    margin-left: 100px;
+    margin-left: 120px;
     overflow: hidden;
 }
 .archive-list a {
