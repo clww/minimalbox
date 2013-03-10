@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+
+<div class="post normal-post">
+  <h2 class="title">{{ post.title }}<a title="permanent link" class="perman-link" href="{{post.url}}#content-start">∞</a></h2>
+  <span class="date">{{ post.date | date('%B %d, %Y') }}</span>
+
+  <div class="post-body">
+    {{ post | auto_content }}
+  </div>
+</div>
+
+<div id="disqus_thread" class="comments"></div>
+{{ get_text_file('comment_js').raw_content }}
+
+{% endblock %}
