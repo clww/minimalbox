@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Archive{% endblock %}
+
+{% block nav_index %}class="current"{% endblock %}
+
+{% block content %}
+<ul class="archive-list">
+  {% for month, posts in archive %}
+  <li>
+  <p class="month">{{ month }}</p>
+  {% for post in posts %}
+  <div class="post-set">
+    <span class="date">{{ post.date | date("%B, %d") }}</span>
+    <div class="post-link">
+      <a href="{{ post.url }}">{{ post.title}}</a>
+    </div>
+  </div>
+  {% endfor %}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
+

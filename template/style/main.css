@@ -264,7 +264,39 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-
+/*----- archive page -----*/
+.archive-list {
+    list-style: none;
+}
+.archive-list .month{
+    margin-left: 100px;
+    font-size: 2em;
+    color: #222;
+}
+.archive-list .post-set {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.archive-list .post-set span {
+    display: block;
+    float: left;
+    text-align: right;
+    width: 80px;
+}
+.archive-list .post-set .post-link {
+    margin-left: 100px;
+    overflow: hidden;
+}
+.archive-list a {
+    border-bottom: solid 1px #444;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    transition: all linear 0.4s;
+}
+.archive-list a:hover {
+    color: #C9261E;
+    border-bottom-color: #E60900;
+}
 
 /*----- syntax color from farbox basis.css -----*/
 .hll { background-color: #ffffcc }
