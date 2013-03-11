@@ -3,8 +3,18 @@
     margin: 0;
 }
 
+::selection {
+    background: black;
+    color: white;
+}
+
+::-moz-selection {
+    background: black;
+    color: white;
+}
+
 body {
-    font: 18px 'Enriqueta', Helvetica, Arial, sans-serif;
+    font: 18px 'Enriqueta', Times New Roman, Times, serif;
     color: #444;
     background: #fdfdfd;
 }
@@ -13,6 +23,10 @@ a { color: black; text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
+}
+
+del {
+    color: #999;
 }
 
 .center-container {
