@@ -219,10 +219,11 @@ del {
     /*----- headers -----*/
     h3 {
         font-size: 1.2em;
-        color: #222;
+        color: #00A0D1;
         font-weight: bold;
         margin-top: 2em;
         margin-bottom: 0.25em;
+        font-weight: normal;
     }
     h4 {
         font-size: 1em;
@@ -310,6 +311,24 @@ del {
 .archive-list a:hover {
     color: #C9261E;
     border-bottom-color: #E60900;
+}
+
+
+/*----- paginator -----*/
+.round {
+    color: #333;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    transition: all linear 0.4s;
+}
+.round:hover {
+    color: #C9261E;
+}
+.round.pre {
+    float: left;
+}
+.round.new {
+    float: right;
 }
 
 /*----- syntax color from farbox basis.css -----*/

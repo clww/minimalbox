@@ -1,0 +1,11 @@
+{% if paginator.has_previous or  paginator.has_next %}
+<div class="clear"></div>
+<div class="pager">
+    {% if paginator.has_previous %}
+    <a class="round pre" href="{{ paginator.previous_page_url }}">← new posts</a>
+    {% endif %}
+    {% if paginator.has_next %}
+    <a class="round new" href="{{ paginator.next_page_url}}">older posts →</a>
+    {% endif %}
+</div>
+{% endif %}
