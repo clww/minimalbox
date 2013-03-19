@@ -30,7 +30,7 @@ del {
 }
 
 .center-container {
-    width: 600px;
+    width: 660px;
     max-width: 90%;
     margin: 0 auto;
 }
@@ -118,6 +118,7 @@ del {
         max-width: 100%;
         height: auto;
         margin: 10px  auto;
+        display: block;
     }
     .post .date {
         font-size: 1em;
@@ -130,7 +131,12 @@ del {
         list-style: none;
     }
 
-    .post-body ul li {
+    .post-body ol {
+        margin: 1em 0;
+        padding-left: 2em;
+    }
+
+    .post-body ul li, .post-body ol li {
         margin: 1em 0;
         position: relative;
         font-size: 0.9em;
@@ -215,6 +221,11 @@ del {
     }
     .post.normal-post .post-body p {
         margin: 1em 0;
+    }
+
+    .post.normal-post p.eof {
+        text-align: center;
+        margin: 33px 0;
     }
     /*----- headers -----*/
     h3 {
