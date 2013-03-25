@@ -10,7 +10,7 @@
   <p class="month">{{ month }}</p>
   {% for post in posts %}
   <div class="post-set">
-    <span class="date">{{ post.date | date("%B, %d") }}</span>
+    <span class="date">{{ post.date | date("%b. %d") }}</span>
     <div class="post-link">
       <a href="{{ post.url }}#content-start">{{ post.title}}</a>
     </div>
