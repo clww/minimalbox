@@ -190,18 +190,24 @@ del {
         color: #E60900;
     }
 
-    .post.link-title-post .title  a:after {
+    .post.link-title-post .title a:after {
         content: '·';
         position: absolute;
         left: -10px;
+        top: -0.15em;
     }
-    .post.link-title-post .title  a:before {
-        content: '→';
-        position: absolute;
-        right: -30px;
-        top: 0.3em;
+    .post.link-title-post .title span {
         font-size: 0.6em;
+        margin-top: 0.3em;
+        margin-left: 10px;
     }
+    /*.post.link-title-post .title  a:before {*/
+    /*content: '→';*/
+    /*position: absolute;*/
+    /*right: -30px;*/
+    /*top: 0.3em;*/
+    /*font-size: 0.6em;*/
+    /*}*/
     .post.link-title-post .post-body {
         font-size: 1.0em;
         color: #555;
@@ -214,6 +220,7 @@ del {
         color: #E60900;
         position: absolute;
         left: -25px;
+        top: 0;
     }
     .post.normal-post .post-body {
         margin-top: 30px;
@@ -314,10 +321,11 @@ del {
     overflow: hidden;
 }
 .archive-list a {
-    border-bottom: solid 1px #444;
+    /*border-bottom: solid 1px #444;*/
     -webkit-transition: all linear 0.4s;
     -moz-transition: all linear 0.4s;
     transition: all linear 0.4s;
+    text-decoration: underline;
 }
 .archive-list a:hover {
     color: #C9261E;

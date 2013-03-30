@@ -8,29 +8,29 @@
     <link rel="stylesheet" href="/template/style/main.css" type="text/css">
   </head>
   <body>
-      <div class="header-wrap">
-          <div class="header center-container">
-              <a href="http://copri.me" class="logo" title="{{ site.title }}">{{ site.title or 'Doesn\'t matter.'}}</a>
-              {% if has('posts') %}
-              <ul class="nav">
-                  <li>{</li>
-                  <li>
-                  <a href="/" {% block nav_index %}{% endblock %}>home,</a>
-                  </li>
-                  <li>
-                  <a href="/archive" {% block nav_archive %}{% endblock %}>archive,</a>
-                  </li>
-                  <li>
-                  <a href="/pages/links" {% if request.path == '/pages/links' %}class="current"{% endif %}>links,</a>
-                  </li>
-                  <li>
-                  <a  href="/pages/about" {% if request.path == '/pages/about' %}class="current"{% endif %}>about</a>
-                  </li>
-                  <li>}</li>
-              </ul>
-              {% endif %}
-          </div>
+    <div class="header-wrap">
+      <div class="header center-container">
+        <a href="http://copri.me" class="logo" title="{{ site.title }}">{{ site.title or 'Doesn\'t matter.'}}</a>
+        {% if has('posts') %}
+        <ul class="nav">
+          <li>{</li>
+          <li>
+          <a href="/" {% block nav_index %}{% endblock %}>home,</a>
+          </li>
+          <li>
+          <a href="/archive" {% block nav_archive %}{% endblock %}>archive,</a>
+          </li>
+          <li>
+          <a href="/pages/links" {% if request.path == '/pages/links' %}class="current"{% endif %}>links,</a>
+          </li>
+          <li>
+          <a  href="/pages/about" {% if request.path == '/pages/about' %}class="current"{% endif %}>about</a>
+          </li>
+          <li>}</li>
+        </ul>
+        {% endif %}
       </div>
+    </div>
 
     <div class="content-wrap" id="content-start">
       <div class="content center-container">

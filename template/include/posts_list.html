@@ -1,11 +1,11 @@
 {% for post in posts %}
 <div class="post link-title-post">
-    <h2 class="title"><a href="{{post.url}}#content-start">{{ post.title }}</a></h2>
-    <span class="date">{{ post.date | date('%B %d, %Y') }}</span>
+  <h2 class="title"><a href="{{post.url}}#content-start">{{ post.title }}</a><span> →</span></h2>
+  <span class="date">{{ post.date | date('%B %d, %Y') }}</span>
 
-    <div class="post-body">
-        {{ post.content | limit(100) }}
-    </div>
+  <div class="post-body">
+    {{ post.content | limit(100) }}
+  </div>
 </div>
 {% endfor %}
 
