@@ -104,6 +104,26 @@ del {
     overflow: auto;
     max-width: 800px;
 }
+
+    /*----- Tags  -----*/
+    .tags { 
+        font-size: 0.8em; 
+        color: #888; 
+    }
+    .tags a { 
+        color: #888;
+        border-bottom: dotted 1px #888; 
+        margin-left: 10px; 
+        transition: all linear 0.4s;
+        -webkit-transition: all linear 0.4s;
+        -moz-transition: all linear 0.4s;
+    }
+    .tags a:hover { 
+        color: black;
+        border-bottom-color: black; 
+        margin-left: 10px; 
+    }
+
     /*----- Post -----*/
     .post {
         line-height: 1.6;

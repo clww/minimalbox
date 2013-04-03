@@ -4,7 +4,11 @@
   <span class="date">{{ post.date | date('%B %d, %Y') }}</span>
 
   <div class="post-body">
+    {% if post.metadata.has_key('abstract') %}
+    {{ post.metadata['abstract'] }}
+    {% else %}
     {{ post.content | limit(100) }}
+    {% endif %}
   </div>
 </div>
 {% endfor %}

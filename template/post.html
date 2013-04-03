@@ -6,6 +6,13 @@
 <div class="post normal-post">
   <h2 class="title">{{ post.title }}<a title="permanent link" class="perman-link" href="{{post.url}}#content-start">∞</a></h2>
   <span class="date">{{ post.date | date('%B %d, %Y') }}</span>
+  {% if post.tags %}
+  <p class="tags">Tags:
+  {% for tag in post.tags %}
+  <a href="/tags/{{ tag }}">{{ tag }}</a>
+  {% endfor %}
+  {% endif %}
+  </p>
 
   <div class="post-body">
     {{ post | auto_content }}
