@@ -181,6 +181,7 @@ del {
         padding: 3px 5px;
         margin-top: -3px;
         color: black;
+        white-space: nowrap;
     }
 
     .post-body p a {
@@ -194,6 +195,47 @@ del {
     .post-body p a:hover {
         color: #C9261E;
         border-bottom-color: #E60900;
+    }
+
+    /*----- Home page ref Post -----*/
+    .post.ref-post .title a {
+        position: relative;
+        font-size: 0.8em;
+        color: #E60900;
+        -webkit-transition: color linear .4s;
+        -moz-transition: color linear .4s;
+        transition: color linear .4s;
+    }
+
+    .post.ref-post .title span {
+        font-size: 0.6em;
+        color: #E60900;
+        margin-left: 10px;
+    }
+    .post.ref-post .title span.source {
+        color: #aaa;
+    }
+    .comment-body {
+        position: relative;
+        padding-left: 1em;
+        font-size: .9em;
+        color: #888;
+        padding-top: 10px;
+    }
+    .comment-body:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "\201C";
+        font-size: 2em;
+        color: #eee;
+    }
+    .comment-body p {
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+    .post .comment-body code {
+        background: beige;
     }
 
     /*----- Home page Post -----*/
@@ -216,11 +258,6 @@ del {
         left: -10px;
         top: -0.15em;
     }
-    .post.link-title-post .title span {
-        font-size: 0.6em;
-        margin-top: 0.3em;
-        margin-left: 10px;
-    }
     /*.post.link-title-post .title  a:before {*/
     /*content: '→';*/
     /*position: absolute;*/
@@ -235,12 +272,20 @@ del {
     /*----- Post page Post -----*/
     .post.normal-post .title {
         position: relative;
+        font-size: 3em;
+        font-weight: bold;
+        line-height: 1.1;
+    }
+    .post.normal-post .title .refer-title {
+        color: #B3443F;
+        text-decoration: underline;
     }
     .post.normal-post .title .perman-link {
         color: #E60900;
         position: absolute;
         left: -25px;
-        top: 0;
+        top: 0.5em;
+        font-size: 0.5em;
     }
     .post.normal-post .post-body {
         margin-top: 30px;
@@ -253,6 +298,7 @@ del {
     .post.normal-post p.eof {
         text-align: center;
         margin: 33px 0;
+        color: #bbb;
     }
     /*----- headers -----*/
     h3 {
@@ -303,13 +349,18 @@ del {
 /*----- responsive for small screen ----- */
 @media screen and (max-width: 480px) {
     .header .logo {
-        margin-top: 100px; 
+        /*margin-top: 100px; */
     }
     .nav li {
         float: none;
     }
+    .post.normal-post .title {
+        font-size: 2em;
+        line-height: 1.2;
+    }
 
     .post.normal-post .title .perman-link {
+        font-size: 0.8em;
         color: #E60900;
         position: absolute;
         left: 0;
@@ -330,7 +381,7 @@ del {
     overflow: hidden;
     margin-bottom: 20px;
 }
-.archive-list .post-set span {
+.archive-list .post-set .date {
     display: block;
     float: left;
     text-align: right;
@@ -339,6 +390,13 @@ del {
 .archive-list .post-set .post-link {
     margin-left: 120px;
     overflow: hidden;
+}
+.refer-link {
+    font-size: 0.9em;
+    color: #888;
+}
+.refer-link span {
+    font-size: 0.7em;
 }
 .archive-list a {
     /*border-bottom: solid 1px #444;*/

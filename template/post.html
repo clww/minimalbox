@@ -4,7 +4,13 @@
 {% block content %}
 
 <div class="post normal-post">
-  <h2 class="title">{{ post.title }}<a title="permanent link" class="perman-link" href="{{post.url}}#content-start">∞</a></h2>
+  <h2 class="title">
+    {% if post.metadata.has_key('type') and post.metadata['type'] == 'refer' %}
+    <a class="refer-title" href="{{ post.metadata['refer_url'] }}" target="_blank">{{ post.title }}</a>
+    {% else %}
+    {{ post.title }}
+    {% endif %}
+    <a title="permanent link" class="perman-link" href="{{post.url}}#content-start">∞</a></h2>
   <span class="date">{{ post.date | date('%B %d, %Y') }}</span>
   {% if post.tags %}
   <p class="tags">Tags:
@@ -18,7 +24,7 @@
     {{ post | auto_content }}
   </div>
 
-  <p class="eof">EOF</p>
+  <p class="eof">· EOF ·</p>
 </div>
 
 <div id="disqus_thread" class="comments"></div>
