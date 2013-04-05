@@ -48,16 +48,16 @@ del {
 }
 
 .header .logo {
-    float: left;
-    display: block;
-    height: 30px;
-    width: 30px;
+    /*float: left;*/
+    /*display: block;*/
+    /*height: 30px;*/
+    /*width: 30px;*/
 
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
+    /*text-indent: 100%;*/
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
 
-    background: url('../image/site_logo.png') no-repeat;
+    /*background: url('../image/site_logo.png') no-repeat;*/
 }
     /*----- Top nav -----*/
     .nav {
