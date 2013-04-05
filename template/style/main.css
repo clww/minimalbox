@@ -48,7 +48,7 @@ del {
 }
 
 .header .logo {
-    /*float: left;*/
+    float: left;
     /*display: block;*/
     /*height: 30px;*/
     /*width: 30px;*/
