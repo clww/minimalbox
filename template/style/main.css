@@ -14,7 +14,7 @@
 }
 
 body {
-  font: 18px 'Enriqueta', Times New Roman, Times, serif;
+  font: 18px 'Andada', 'Georgia', serif;
   color: #444;
   background: #fdfdfd;
 }
@@ -220,7 +220,7 @@ code, pre {
   position: relative;
   padding-left: 1em;
   font-size: .9em;
-  color: #888;
+  color: #555;
   padding-top: 10px;
 }
 .comment-body:before {

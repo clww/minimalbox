@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %} {{site.title}} {% endblock %}</title>
     <link rel="shortcut icon" href="/template/image/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Enriqueta" type="text/css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Andada" type="text/css">
     <link rel="stylesheet" href="/template/style/main.css" type="text/css">
   </head>
   <body>
@@ -14,7 +14,7 @@
         <a href="http://copri.me" class="logo" title="{{ site.title }}">{{ site.title or 'Doesn\'t matter.'}}</a>
         {% if has('posts') %}
         <ul class="nav">
-          <li>{</li>
+          <li>[</li>
           <li>
           <a href="/" {% block nav_index %}{% endblock %}>home,</a>
           </li>
@@ -24,7 +24,7 @@
           <li>
           <a  href="/pages/about" {% if request.path == '/pages/about' %}class="current"{% endif %}>about</a>
           </li>
-          <li>}</li>
+          <li>]</li>
         </ul>
         {% endif %}
       </div>

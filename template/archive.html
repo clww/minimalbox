@@ -13,7 +13,7 @@
     <span class="date">{{ post.date | date("%b. %d") }}</span>
     <div class="post-link">
       {% if post.metadata.has_key('type') and post.metadata['type'] == 'refer' %}
-      <a class="refer-link" href="{{ post.url }}#content-start"><span>[comment]</span>{{ post.title}}</a>
+      <a class="refer-link" href="{{ post.url }}#content-start"><span>[reference]</span>{{ post.title}}</a>
       {% else %}
       <a href="{{ post.url }}#content-start">{{ post.title}}</a>
       {% endif %}
