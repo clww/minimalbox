@@ -3,11 +3,14 @@
 
 {% block nav_archive %}class="current"{% endblock %}
 
+{% set total_posts = get_posts(limit=300, sort='desc') %}
+{% set entries = group(total_posts, 'date:year', reverse=True) %}
+
 {% block content %}
 <ul class="archive-list">
-  {% for month, posts in archive %}
+  {% for year, posts in entries %}
   <li>
-  <p class="month">{{ month }}</p>
+  <p class="year">{{ year }}</p>
   {% for post in posts %}
   <div class="post-set">
     <span class="date">{{ post.date | date("%b. %d") }}</span>

@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="/template/image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Andada" type="text/css">
     <link rel="stylesheet" href="/template/style/main.css" type="text/css">
+    {{ get_text_file('ga_js').raw_content }}
   </head>
   <body>
     <div class="header-wrap">
@@ -14,17 +15,15 @@
         <a href="http://copri.me" class="logo" title="{{ site.title }}">{{ site.title or 'Doesn\'t matter.'}}</a>
         {% if has('posts') %}
         <ul class="nav">
-          <li>[</li>
           <li>
-          <a href="/" {% block nav_index %}{% endblock %}>home,</a>
+          <a href="/" {% block nav_index %}{% endblock %}>home</a>
           </li>
           <li>
-          <a href="/archive" {% block nav_archive %}{% endblock %}>archive,</a>
+          <a href="/archive" {% block nav_archive %}{% endblock %}>archive</a>
           </li>
           <li>
           <a  href="/pages/about" {% if request.path == '/pages/about' %}class="current"{% endif %}>about</a>
           </li>
-          <li>]</li>
         </ul>
         {% endif %}
       </div>

@@ -71,11 +71,12 @@ del {
 }
 .nav li {
   float: left;
-  margin-right: 20px;
+  margin-left: 20px;
   font-size: 1em;
 }
 .nav li a {
   position: relative;
+  transition: all linear .3s;
 }
 
 /*.nav li a.current,*/
@@ -83,11 +84,11 @@ del {
   color: #E60900;
 }
 
-.nav li a:hover:after {
-  content: '·';
-  position: absolute;
-  left: -10px;
-}
+/*.nav li a:hover:after {*/
+/*content: '·';*/
+/*position: absolute;*/
+/*left: -10px;*/
+/*}*/
 
 /*-------------------*/
 /*----- Content -----*/
@@ -283,6 +284,7 @@ code, pre {
   font-size: 3em;
   font-weight: bold;
   line-height: 1.1;
+  font-family: 'Andada', 'Georgia',"Kaiti SC","KaiTi",serif;
 }
 .post.normal-post .title .refer-title {
   color: #B3443F;
@@ -294,6 +296,7 @@ code, pre {
   left: -25px;
   top: 0.5em;
   font-size: 0.5em;
+  font-weight: normal;
 }
 .post.normal-post .post-body {
   margin-top: 30px;
@@ -301,6 +304,7 @@ code, pre {
 }
 .post.normal-post .post-body p {
   margin: 1em 0;
+  text-align: justify;
 }
 
 .post.normal-post p.eof {
@@ -329,7 +333,7 @@ h4 {
   position: relative;
   padding-left: 1em;
   font-size: .8em;
-  color: #aaa;
+  color: #999;
   line-height: 1.2em;
 }
 .post-body blockquote:before {
@@ -338,7 +342,7 @@ h4 {
   left: 0;
   content: "\201C";
   font-size: 2em;
-  color: #eee;
+  color: #ccc;
 }
 
 /*------------------*/
@@ -386,8 +390,9 @@ h4 {
 .archive-list {
   list-style: none;
 }
-.archive-list .month{
+.archive-list .year{
   margin-left: 120px;
+  margin-bottom: 20px;
   font-size: 1.5em;
   color: #222;
 }
