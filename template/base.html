@@ -12,7 +12,8 @@
   <body>
     <div class="header-wrap">
       <div class="header center-container">
-        <a href="http://copri.me" class="logo" title="{{ site.title }}">{{ site.title or 'Doesn\'t matter.'}}</a>
+        <a href="{{ site.title_link or '/' }}" class="logo" title="{{
+          site.title }}">{{ site.title or 'site.title'}}</a>
         {% if has('posts') %}
         <ul class="nav">
           <li>
