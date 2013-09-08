@@ -403,7 +403,6 @@ h4 {
 .archive-list .post-set .date {
   display: block;
   float: left;
-  text-align: right;
   width: 100px;
 }
 .archive-list .post-set .post-link {
