@@ -19,7 +19,8 @@ body {
   background: #fdfdfd;
 }
 
-a { color: black; text-decoration: none; }
+a { color: black; text-decoration: none; transition: color linear .2s; }
+a:hover { color: #E60900; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
@@ -94,6 +95,10 @@ del {
 /*----- Content -----*/
 /*-------------------*/
 .content-wrap {
+  margin-top: 50px;
+}
+#content-start {
+  margin-top: 0;
   padding-top: 50px;
 }
 .content pre {
@@ -183,11 +188,11 @@ code, pre {
 
 .post code {
   font-size: 14px;
-  background: #FDF7EF;
   border-radius: 5px;
   padding: 3px 5px;
   margin-top: -3px;
-  color: black;
+  color: #666;
+  border: solid 1px #ccc;
 }
 
 .post-body a {
@@ -243,9 +248,6 @@ code, pre {
 .comment-body ul {
   list-style: circle inside;
 }
-.post .comment-body code {
-  background: beige;
-}
 
 /*----- Home page Post -----*/
 .post.link-title-post .title a {
@@ -281,6 +283,7 @@ code, pre {
 /*----- Post page Post -----*/
 .post.normal-post .title {
   position: relative;
+  margin-top: 0;
   font-size: 3em;
   font-weight: bold;
   line-height: 1.1;
@@ -349,8 +352,7 @@ h4 {
 /*----- footer -----*/
 /*------------------*/
 .footer-wrap {
-  margin-top: 160px;
-  padding-bottom: 10px;
+  padding: 150px 0 50px; 
 }
 
 .footer p {
