@@ -326,7 +326,7 @@ h3 {
 }
 h4 {
   font-size: 1em;
-  color: #444;
+  color: #6194B6;
   font-weight: bold;
   margin-top: 1.5em;
   margin-bottom: 0.25em;
@@ -352,7 +352,7 @@ h4 {
 /*----- footer -----*/
 /*------------------*/
 .footer-wrap {
-  padding: 150px 0 50px; 
+  padding: 150px 0 10px; 
 }
 
 .footer p {
