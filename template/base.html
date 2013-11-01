@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %} {{site.title}} {% endblock %}</title>
     <link rel="shortcut icon" href="/template/image/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Andada" type="text/css">
+    <script type="text/javascript" src="//use.typekit.net/yhi2eqj.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <link rel="stylesheet" href="/template/style/main.css" type="text/css">
     {{ get_text_file('ga_js').raw_content }}
   </head>
@@ -14,19 +15,6 @@
       <div class="header center-container">
         <a href="{{ site.title_link or '/' }}" class="logo" title="{{
           site.title }}">{{ site.title or 'site.title'}}</a>
-        {% if has('posts') %}
-        <ul class="nav">
-          <li>
-          <a href="/" {% block nav_index %}{% endblock %}>home</a>
-          </li>
-          <li>
-          <a href="/archive" {% block nav_archive %}{% endblock %}>archive</a>
-          </li>
-          <li>
-          <a  href="/pages/about" {% if request.path == '/pages/about' %}class="current"{% endif %}>about</a>
-          </li>
-        </ul>
-        {% endif %}
       </div>
     </div>
 

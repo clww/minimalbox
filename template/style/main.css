@@ -14,7 +14,7 @@
 }
 
 body {
-  font: 18px 'Andada', 'Georgia', serif;
+  font: 18px 'adelle', 'Georgia', serif;
   color: #444;
   background: #fdfdfd;
 }
@@ -22,13 +22,31 @@ body {
 a { color: black; text-decoration: none; transition: color linear .2s; }
 a:hover { color: #E60900; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
+h2, h3, h4, h5, h6 {
+  margin-top: 2em;
+  font-family: "calluna-sans", sans-serif;
+  font-weight: bold;
 }
 
 h2 { 
-  margin-top: 50px;
+  font-size: 2em;
+  color: #222;
 }
+h3 {
+  font-size: 1.5em;
+  color: #2F76A5;
+}
+h4 {
+  font-size: 1.3em;
+  color: #409ad6;
+}
+h5 {
+  font-size: 1.2em;
+}
+h6 {
+  font-size: 1em;
+}
+
 
 del {
   color: #999;
@@ -45,7 +63,7 @@ del {
 /*------------------*/
 .header-wrap {
   width: 100%;
-  border-bottom: solid 1px #D6D6D6;
+  border-bottom: solid 1px #eee;
 }
 .header {
   padding: 40px 0;
@@ -64,32 +82,6 @@ del {
 
   /*background: url('../image/site_logo.png') no-repeat;*/
 }
-/*----- Top nav -----*/
-.nav {
-  list-style: none;
-  float: right;
-  overflow: hidden;
-}
-.nav li {
-  float: left;
-  margin-left: 20px;
-  font-size: 1em;
-}
-.nav li a {
-  position: relative;
-  transition: all linear .3s;
-}
-
-/*.nav li a.current,*/
-.nav li a:hover {
-  color: #E60900;
-}
-
-/*.nav li a:hover:after {*/
-/*content: '·';*/
-/*position: absolute;*/
-/*left: -10px;*/
-/*}*/
 
 /*-------------------*/
 /*----- Content -----*/
@@ -160,7 +152,6 @@ del {
 .post-body ul {
   margin: 1em 0;
   padding-left: 2em;
-  list-style: none;
 }
 
 .post-body ol {
@@ -169,17 +160,9 @@ del {
 }
 
 .post-body ul li, .post-body ol li {
-  margin: 1em 0;
+  margin: 0.5em 0;
   position: relative;
   font-size: 0.9em;
-}
-
-.post-body ul li:after {
-  position: absolute;
-  color: red;
-  content: '·';
-  left: -10px;
-  top: 0;
 }
 
 code, pre {
@@ -189,8 +172,8 @@ code, pre {
 .post code {
   font-size: 14px;
   border-radius: 5px;
-  padding: 3px 5px;
-  margin-top: -3px;
+  margin: 0 2px;
+  padding: 0px 5px;
   color: #666;
   border: solid 1px #ccc;
 }
@@ -252,6 +235,7 @@ code, pre {
 /*----- Home page Post -----*/
 .post.link-title-post .title a {
   position: relative;
+  font-family: 'adelle', 'Georgia', serif;
   color: #111;
   -webkit-transition: color linear .4s;
   -moz-transition: color linear .4s;
@@ -263,19 +247,6 @@ code, pre {
   color: #E60900;
 }
 
-.post.link-title-post .title a:after {
-  content: '·';
-  position: absolute;
-  left: -10px;
-  top: -0.15em;
-}
-/*.post.link-title-post .title  a:before {*/
-/*content: '→';*/
-/*position: absolute;*/
-/*right: -30px;*/
-/*top: 0.3em;*/
-/*font-size: 0.6em;*/
-/*}*/
 .post.link-title-post .post-body {
   font-size: 1.0em;
   color: #555;
@@ -285,9 +256,9 @@ code, pre {
   position: relative;
   margin-top: 0;
   font-size: 3em;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.1;
-  font-family: 'Andada', 'Georgia',"Kaiti SC","KaiTi",serif;
+  font-family: 'adelle', 'Georgia',"Kaiti SC","KaiTi",serif;
 }
 .post.normal-post .title .refer-title {
   color: #B3443F;
@@ -306,7 +277,7 @@ code, pre {
   font-size: 1.1em;
 }
 .post.normal-post .post-body p {
-  margin: 1em 0;
+  margin: 1.5em 0;
   text-align: justify;
 }
 
@@ -316,36 +287,20 @@ code, pre {
   color: #bbb;
 }
 /*----- headers -----*/
-h3 {
-  font-size: 1.2em;
-  color: #00A0D1;
-  font-weight: bold;
-  margin-top: 2em;
-  margin-bottom: 0.25em;
-  font-weight: normal;
-}
-h4 {
-  font-size: 1em;
-  color: #6194B6;
-  font-weight: bold;
-  margin-top: 1.5em;
-  margin-bottom: 0.25em;
-}
-
 .post-body blockquote {
   position: relative;
   padding-left: 1em;
   font-size: .8em;
-  color: #999;
+  color: #862E1E;
   line-height: 1.2em;
 }
 .post-body blockquote:before {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 33px;
+  left: -33px;
   content: "\201C";
-  font-size: 2em;
-  color: #ccc;
+  font-size: 9em;
+  color: #ddd;
 }
 
 /*------------------*/
@@ -355,20 +310,19 @@ h4 {
   padding: 150px 0 10px; 
 }
 
+.footer__links a { margin: 5px; }
+
 .footer p {
+  margin-top: 5px;
   text-align: center;
   font-size: 0.75em;
 }
 
 /*----- responsive for small screen ----- */
 @media screen and (max-width: 480px) {
-  .header .logo {
-    /*margin-top: 100px; */
+  body {
+    font-size: 16px;
   }
-  .nav li {
-    float: none;
-  }
-
   .post {
     line-height: 1.6;
     margin-bottom: 55px; 
