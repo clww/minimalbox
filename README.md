@@ -1,7 +1,10 @@
-This is a Minimalism and simple responsive theme for blog powered by farbox.com
-Checkout at [blog.copri.me](http:/blog.copri.me)
+This is a super simple and responsive theme for blog powered by farbox.com,
+modified from the default theme.
+Checkout at [copri.me](http:/copri.me)
 
-Originally modified from the default theme provided by farbox
-inspired by marco.org
 
-第三方评论的代码放入站点下的comment_js.txt中。
+Put you disqus script in comment_js.txt from your site folder. Since I'm using
+typekit for font hosting you may need to edit or delete related lines in
+base.html.
+
+sorry for the mess;
